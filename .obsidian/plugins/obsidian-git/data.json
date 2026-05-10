@@ -1,0 +1,20 @@
+{
+  "commitMessage": "vault backup: {{date}}",
+  "autoCommitMessage": "vault backup: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 10,
+  "autoPushOnBackup": true,
+  "pullBeforePush": true,
+  "disablePush": false,
+  "syncMethod": "merge",
+  "gitPath": "",
+  "username": "",
+  "password": "",
+  "showStatusBar": true,
+  "refreshSourceControl": true,
+  "basePath": "",
+  "differentIntervalCommitAndPush": false,
+  "changesBeforeAutoCommit": 0,
+  "updateSubmodules": false,
+  "gitDir": ""
+}
