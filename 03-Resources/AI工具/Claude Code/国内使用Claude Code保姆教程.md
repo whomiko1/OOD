@@ -1,7 +1,6 @@
 ---
 tags:
   - AI工具
-  - Claude Code
   - 教程
 source: 微信公众号·卡兹克
 date: 2026-05-10
