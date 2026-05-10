@@ -3,3 +3,6 @@
 .obsidian/workspace-mobile.json
 .trash/
 .DS_Store
+
+# Plugin data files often contain API keys / secrets — never commit
+.obsidian/plugins/*/data.json
