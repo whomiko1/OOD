@@ -188,3 +188,4 @@ Harness 复利：一旦跑起来，AI 接管的工作越多，失败信号越丰
 4. Ken Huang, *What is an Agentic AI Native Organization?*, Substack, February 2026
 5. Peter Pang, *Why Your "AI-First" Strategy Is Probably Wrong*, X (Twitter), April 2026
 6. Steve Yegge, *The Anthropic Hive Mind*, Medium, February 2026
+![[Pasted image 20260510183520.png]]
