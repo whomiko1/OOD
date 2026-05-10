@@ -40,7 +40,7 @@ Templates/       → 模板，不直接放內容，僅供 Templater 引用
 
 ## 模板使用
 新增筆記時，優先套用 Templates/ 下對應模板，保持欄位一致性。
-- Templater 語法：`2026-05-10` 等，Claude 修改模板時不要破壞這些語法。
+- Templater 語法（如 tp.date.now、tp.file.title 等動態語法），Claude 修改模板時不要破壞這些語法。
 - Dataview 查詢塊（\`\`\`dataview ... \`\`\`）只能讀取，不要手動填入 Dataview 塊的內容。
 
 ## 操作紅線
