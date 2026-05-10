@@ -7,7 +7,12 @@
   "shell_path": "",
   "user_scripts_folder": "",
   "enable_folder_templates": true,
-  "folder_templates": [],
+  "folder_templates": [
+    { "folder": "Daily Notes", "template": "Templates/Daily Note.md" },
+    { "folder": "Projects", "template": "Templates/Project.md" },
+    { "folder": "Books", "template": "Templates/Book Note.md" },
+    { "folder": "Meetings", "template": "Templates/Meeting.md" }
+  ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [],
