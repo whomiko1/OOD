@@ -1,0 +1,13 @@
+#!/bin/sh
+# Block commits that add/modify any plugin data.json (often contains API keys).
+# Bypass with: git commit --no-verify
+matches=$(git diff --cached --name-only --diff-filter=AM | grep -E '^\.obsidian/plugins/[^/]+/data\.json$' || true)
+if [ -n "$matches" ]; then
+  echo ""
+  echo "X  Refusing to commit plugin data.json (likely contains secrets):"
+  echo "$matches" | sed 's/^/     /'
+  echo ""
+  echo "   These paths are .gitignored. To override (you really mean it), run:"
+  echo "       git commit --no-verify"
+  exit 1
+fi
