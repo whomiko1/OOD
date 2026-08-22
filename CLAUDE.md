@@ -38,6 +38,22 @@ Templates/       → 模板，不直接放內容，僅供 Templater 引用
 - `#dashboard` — 儀表板（排除在 Dataview 一般查詢外）
 - `#AI工具` — AI 工具相關資源
 
+## 發佈到部落格（dyrbrm.dev）
+
+部分筆記會選擇性發佈到公開部落格（Quartz 站，repo 在 `C:\Users\User\code\dyrbrm-site`）。
+機制是 **opt-in 旗標**——只有加了旗標的筆記才會被搬過去，其餘一律不動。
+
+要發佈某篇筆記，在它 frontmatter 加：
+```yaml
+publish: true
+slug: spc-control-charts   # 英文 kebab-case，這就是公開網址 /posts/<slug>
+```
+
+- ⚠ **`publish: true` = 公開上網，誰都看得到**。機密 / 私人筆記絕不要加這旗標。
+- 同步由部落格 repo 的 `npm run sync` 執行（讀這個 vault，挑出 publish:true 的筆記）。
+- 發佈時只有 `title / date / tags / draft / publishDate` 會帶過去；author/rating/status 等不外流。
+- 控制 tag（book/daily/project/meeting/dashboard）會被濾掉，只有主題 tag 會出現在公開站。
+
 ## 模板使用
 新增筆記時，優先套用 Templates/ 下對應模板，保持欄位一致性。
 - Templater 語法（如 tp.date.now、tp.file.title 等動態語法），Claude 修改模板時不要破壞這些語法。

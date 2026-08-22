@@ -5,6 +5,8 @@ tags:
   - 個人知識管理
   - RAG
 author: 未知（X 上流傳，關於 Karpathy LLM Wiki 概念）
+publish: true
+slug: rag-vs-llm-wiki
 ---
 
 # RAG vs LLM Wiki：Karpathy 的知識典範轉移
